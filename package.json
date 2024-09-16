@@ -1,0 +1,46 @@
+{
+  "name": "maniphest-bakers-hub-bn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx babel-node index.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "unmigrate": "npx sequelize-cli db:migrate:undo:all",
+    "reset-database": "npm run unmigrate && npm run migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bstwagir/maniphest-bakers-hub-bn.git"
+  },
+  "author": "bstwagir, an-him",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bstwagir/maniphest-bakers-hub-bn/issues"
+  },
+  "homepage": "https://github.com/bstwagir/maniphest-bakers-hub-bn#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "http": "^0.0.1-security",
+    "joi": "^17.13.3",
+    "joi-password": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "path": "^0.12.7",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.25.4"
+  }
+}
